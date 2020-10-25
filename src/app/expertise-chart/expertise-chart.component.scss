@@ -1,0 +1,26 @@
+@media screen {
+  .chart-container {
+    display: flex;
+    flex-direction: row;
+    min-height: 400px;
+    .details-container {
+      width: 50%;
+    }
+    .chart {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .chart-container {
+    flex-direction: column;
+    .details-container {
+      width: 100%;
+    }
+    .chart {
+      display: block;
+      width: 100%;
+    }
+  }
+}

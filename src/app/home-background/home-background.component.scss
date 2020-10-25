@@ -1,0 +1,100 @@
+@import '../../styles.scss';
+
+@mixin bgText {
+  color: #ae7821;
+  font-family: cursive;
+  font-style: italic;
+  font-size: 36px;
+}
+
+@media screen {
+  .bg-container {
+    height: 100vh;
+
+    #header-container {
+      #header {
+        dt {
+          margin: revert;
+          &:after {
+            @include bgText;
+            content: '<html>'
+          }
+        }
+        dd {
+          margin: revert;
+          &:after {
+            @include bgText;
+            content: '<body>';
+          }
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      .home-content {
+        margin: 0px;
+        min-height: 70vh;
+        width: 70%;
+      }
+      .side-content {
+        width: 28%;
+        align-self: center;
+        img {
+          height: 292px;
+          width: 292px;
+        }
+      }
+    }
+    #footer-container {
+      #footer {
+        dt {
+          margin-left: 40px;
+          &:after {
+            @include bgText;
+            content: '</body>';
+          }
+        }
+        dd {
+          &:after {
+            @include bgText;
+            content: '</html>';
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-md) {
+  .bg-container {
+    .content {
+      flex-direction: column;
+      .home-content {
+        width: 100%;
+      }
+      .side-content {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $screen-md + 1) and (max-width: $screen-lg) {
+  .bg-container {
+    .content {
+      flex-direction: row;
+      .home-content {
+        width: 65%;
+      }
+      .side-content {
+        width: 30%;
+        justify-content: center;
+        display: flex;
+      }
+    }
+  }
+}

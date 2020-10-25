@@ -1,0 +1,22 @@
+@import '../styles.scss';
+
+@media screen {
+  .main-content {
+    width: 96vw;
+    margin-left: 60px;
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .main-content {
+    width: 86.5vw;
+  }
+}
+
+@media screen and (max-width: $screen-md) {
+  .main-content {
+    width: 92.5vw;
+  }
+}
+

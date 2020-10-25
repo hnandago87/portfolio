@@ -1,0 +1,35 @@
+@media screen {
+  :host {
+    position: relative;
+    display: none;
+    
+    .tooltip {
+      margin-bottom: 14px;
+      position: absolute;
+      bottom: 100%;
+      left: 25px;
+      padding: 10px;
+      background: #fff;
+      box-shadow: 0 2px 1px rgba(0, 0, 0, 0.6);
+
+      .text {
+        font-size: 14px;
+        display: inline-block;
+        width: max-content;
+        color: #464646;
+      }
+
+      &:after {
+        content: ' ';
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 0;
+        height: 0;
+        border-top: solid 10px #ffffff;
+        border-left: solid 2px transparent;
+        border-right: solid 10px transparent;
+      }
+    }
+  }
+}

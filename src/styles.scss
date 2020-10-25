@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+$screen-lg: 1024px;
+$screen-md: 768px;
+$screen-sm: 460px;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  // color: #1b3766;
+  color: #162847;
+}
+
+body {
+  background-color: #e4e4e4;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 18px;
+  padding: 10px 5px;
+  font-weight: lighter;
+  letter-spacing: -0.5px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+
+  &.row {
+    flex-direction: row;
+  }
+
+  .left {
+    width: 49%;
+    order: 1;
+  }
+
+  .right {
+    width: 49%;
+    order: 2;
+  }
+}

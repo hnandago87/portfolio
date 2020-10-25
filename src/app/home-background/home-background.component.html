@@ -1,0 +1,22 @@
+<div class="bg-container">
+  <span id="header-container">
+    <dl id="header">
+      <dt></dt>
+      <dd></dd>
+    </dl>
+  </span>
+  <div class="content">
+    <div class="home-content">
+      <ng-content></ng-content>
+    </div>
+    <div class="side-content" *ngIf="!hideImage">
+      <img alt="Hari" src="../../assets/myAvatar.png" />
+    </div>
+  </div>
+  <span id="footer-container">
+    <dl id="footer">
+      <dt></dt>
+      <dd></dd>
+    </dl>
+  </span>
+</div>

@@ -1,0 +1,40 @@
+<div>
+  <div class="accordian-root">
+    <p class="accordian-title" role="link" tabindex="0" (click)="setActive(0)" [class.active]="active === 0">NodeJS/ Java</p>
+    <div class="accordian-content" [class.show]="active === 0">
+      <dl>
+        <dt>Developing Enterprise Certified and ECommerce applications.</dt>
+        <dt>Developing RESTful web api with Java, JavaScript and TypeScript.</dt>
+        <dt>Developing business logic to integrate with legacy applications and Sql/NoSql databases.</dt>
+            <dd>MongoDB</dd>
+            <dd>MS SQL Server</dd>
+            <dd>Elasticsearch</dd>
+            <dd class="last">RedisCache</dd>
+        <dt>Developing content management.</dt>
+        <dt>Developing data streaming services.</dt>
+        <dt>Deliver highly fault tolerant and load balanced application.</dt>
+      </dl>
+    </div>
+  </div>
+  <div class="accordian-root">
+    <p class="accordian-title" tabindex="0" role="link" (click)="setActive(1)" [class.active]="active === 1">ReactJS/Angular</p>
+    <div class="accordian-content" [class.show]="active === 1">
+      <dl>
+        <dt>Architect Single Page Application and Micro-Front End applications.</dt>
+        <dt>Developing adaptive and responsive systems for all devices.</dt>
+        <dt>Create user experiences with <a href="https://www.ada.gov/" target="_blank">ADA compliance</a> and <a href="https://www.w3.org/WAI/standards-guidelines/" target="_blank">W3C Accessibility Standards.</a></dt>
+        <dt>Integrate analytics and enhance information presentation with animations and charts/graphs.</dt>
+      </dl>
+    </div>
+  </div>
+  <div class="accordian-root">
+    <p class="accordian-title" tabindex="0" role="link" (click)="setActive(2)" [class.active]="active === 2">Cloud</p>
+    <div class="accordian-content" [class.show]="active === 2">
+      <dl>
+        <dt>Migrating traditional applications to Docker/K8 containers</dt>
+        <dt>Streamlining application development process with cloud/ automation process.</dt>
+        <dt>Leveraging AWS/Azure to maintain a reliable and scalable application.</dt>
+      </dl>
+    </div>
+  </div>
+</div>
