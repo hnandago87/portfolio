@@ -8,7 +8,7 @@ import { TooltipDirective } from '../directives/tooltip/tooltip.directive';
 })
 export class ExpertiseAccordianComponent implements OnInit {
 
-  public active= -1;
+  active= 0;
   constructor() { }
 
   ngOnInit() {

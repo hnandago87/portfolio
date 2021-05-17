@@ -1,18 +1,34 @@
+@import '../../styles.scss';
+
 @media screen {
   .chart-container {
     display: flex;
     flex-direction: row;
     min-height: 400px;
     .details-container {
-      width: 50%;
+      width: 70%;
     }
     .chart {
       display: block;
+      width: 30%;
     }
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: $screen-md-big) and (max-width: $screen-lg-big - 1) {
+  .chart-container {
+    flex-direction: row;
+    .details-container {
+      width: 60%;
+    }
+    .chart {
+      display: block;
+      width: 40%;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-md-big - 1) {
   .chart-container {
     flex-direction: column;
     .details-container {
@@ -20,7 +36,7 @@
     }
     .chart {
       display: block;
-      width: 100%;
+      width: 60%;
     }
   }
 }

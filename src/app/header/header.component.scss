@@ -59,6 +59,13 @@
             background: url("../../assets/about.svg") no-repeat center center;
           }
         }
+        &.contact {
+          &:after {
+            @extend .base-icon;
+            content: ' ';
+            background: url("../../assets/mail.svg") no-repeat center center;
+          }
+        }
       }
     }
   }

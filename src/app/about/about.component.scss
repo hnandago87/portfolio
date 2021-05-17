@@ -1,9 +1,25 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
 @media screen {
   :host {
     .container {
-      padding: 2px 50px 0px 100px;;
+      padding: 2px 50px 0px 100px;
+
+      .experience-description {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-lg - 1) {
+  :host {
+    .container {
+      .experience-description {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }

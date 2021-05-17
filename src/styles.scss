@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+$screen-lg-big: 1200px;
 $screen-lg: 1024px;
+$screen-md-big: 980px;
 $screen-md: 768px;
 $screen-sm: 460px;
 
@@ -9,7 +11,6 @@ $screen-sm: 460px;
   margin: 0px;
   padding: 0px;
   font-family: 'Roboto', sans-serif;
-  // color: #1b3766;
   color: #162847;
 }
 
@@ -19,7 +20,7 @@ body {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -44,6 +45,10 @@ p {
     flex-direction: row;
   }
 
+  &.column {
+    flex-direction: column;
+  }
+
   .left {
     width: 49%;
     order: 1;
@@ -52,5 +57,30 @@ p {
   .right {
     width: 49%;
     order: 2;
+  }
+}
+
+button {
+  &.cancel {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f8f8f8d1;
+  }
+
+  &.text {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    color: #0d5d8f;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }

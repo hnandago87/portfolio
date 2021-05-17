@@ -1,5 +1,9 @@
-<app-home-background [hideImage]=true>
-  <div class="container row">
+<app-home-background [hideImage]="true">
+  <div class="container column">
     <h1>Professional Experience</h1>
+    <div class="experience-description">
+      <app-experience-block (org)="updateSelectedOrg($event)"></app-experience-block>
+      <app-experience-description [sectionOrg]='selectedOrg'></app-experience-description>
+    </div>
   </div>
 </app-home-background>

@@ -10,11 +10,13 @@ import {
 } from "@angular/animations";
 import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
+import { ContactComponent } from './contact/contact.component';
 
 export const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full", data: {state: 'Home'} },
   { path: "home", component: HomeComponent, data: {state: 'Home'}},
   { path: "about", component: AboutComponent, data: {state: 'About'} },
+  {path: "contact", component: ContactComponent, data: {state: 'Contact'}}
 ];
 
 export const routeTransitions = trigger("routeAnimations", [

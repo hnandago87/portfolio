@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
+  selectedOrg: 'CapitalOne' | 'Samsung' | 'CyberSoft' | 'NeimanMarcus' | 'Fisher' | 'Saibersys' | 'UH' | 'SSPL';
 
   constructor() { }
 
   ngOnInit() {
   }
 
-}
+  updateSelectedOrg(org: 'CapitalOne' | 'Samsung' | 'CyberSoft' | 'NeimanMarcus' | 'Fisher' | 'Saibersys' | 'UH' | 'SSPL') {
+    this.selectedOrg = org;
+  }
+ }

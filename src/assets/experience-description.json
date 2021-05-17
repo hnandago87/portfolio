@@ -1,0 +1,138 @@
+{
+  "CapitalOne": {
+    "1": {
+      "title": "DealerNavigator Platform",
+      "description": "DealerNavigator Platform is an enterprise web application developed using Angular. This application helps Dealerships to connect with their existing CRM application, manage potential leads, Create applications for customers, Create a customer portfolio, view inventory, verify potential payment options, create offer, save memos on applications. This application also provides ability to gather audit reports, evaluvate potential payment plan based on minimal customer information. This application allows both User and Inventory management system with integration with external tools for data exchange.",
+      "techSpec": {
+        "Core": "Angular (7 and 10), Typescript, SCSS & Gravity Design Framework, HTML5, CSS3.",
+        "Server": "ASW S3, EC2, Jenkins, TSLint, StyleLint, Prettier.",
+        "codeBase": "Github.",
+        "notes": "*Started with Angular 7 and migrated Angular 10."
+      }
+    },
+    "2": {
+      "Contributions": [
+        ""
+      ]
+    }
+  },
+  "CyberSoft": {
+    "1": {
+      "title": "SchoolCafe 2.0",
+      "description": "SchoolCafe platform is a web portal and a POS application for facilitating/ managing food and nitrition for school students. It involves various modules such as Item Management, Menu Planning, Accounts Management, Point of Sales, Identity Management. A micro-ui architecture was developed for web portal using ReactJS. The POS application was developed using Angular 6 as a progressivce web app. The web portal can control user access across multiple ISD in a state. Order placement, report generation, granting user access, meal recipies planning, nutrition information generation are developed for the web portal.",
+      "techSpec": {
+        "Core": "Angular (6), ReactJS, Typescript, SCSS, Kendo React, Material-UI, HTML5, CSS3, CouchDB",
+        "Server": "Azure devOps, Azure container registry, TSLint, StyleLint, Prettier.",
+        "codeBase": "Azure DevOps",
+        "notes": "*Angular library was used with Ionic for POS application to facilitate offline transactions."
+      }
+    },
+    "2": {
+      "Contributions": [
+        ""
+      ]
+    }
+  },
+  "NeimanMarcus": {
+    "1": {
+      "title": "Meiman Marcus Ecommerce web application - Search and Navigation",
+      "description": "The search and navigation modules in the application is developed as a stand-alone component used across the web application. Keyword searches, search typeahead suggestion, search history are the frontend features developed using ReactJS which is powered by BloomReach API's for autosuggest feature, ElasticSearch API's are using for fetching products using Java Spring Boot. The search filter components are additional feature to provide criteria based selection of products. The web application was developed to supports responsive web design across all devices. User interactions were improved using analytics by tracking page visits, clicks through session cookies and localStorage objects.",
+      "techSpec": {
+        "Core": "ReactJS, Javascript, ES6, Java, Spring Boot, ElasticSearch, BloomReach, HTML5, CSS3, SASS.",
+        "Server": "ASW S3, EC2, Jenkins, ESLint, Kibana Dashboard",
+        "codeBase": "Github.",
+        "notes": "* Feature Toggles were using to control the display of functionality and cookie based A/B testing was facilitated for user experiences."
+      }
+    },
+    "2": {
+      "Contributions": [
+        ""
+      ]
+    }
+  },
+  "Samsung": {
+    "1": {
+      "title": "Samsung Gear",
+      "description": "Samsung Gear is an enterprise web application for managing employees health and safety through Samsung Gear communication interfaces.",
+      "techSpec": {
+        "Core": "ReactJS, MeteorJS, HTML5, CSS3, Material-UI, Python",
+        "Server": "ASW S3, EC2, Jenkins, TSLint, StyleLint, Prettier.",
+        "codeBase": "Github.",
+        "notes": "*Started with Angular 7 and migrated Angular 10."
+      }
+    },
+    "2": {
+      "Contributions": [
+        ""
+      ]
+    }
+  },
+  "ThermoFisher": {
+    "1": {
+      "title": "DealerNavigator Platform",
+      "description": "DealerNavigator Platform is a enterprise web application developed using Angular. This application helps Dealerships to connect with their existing CRM application, manage potential leads, Create applications for customers, Create a customer portfolio, view inventory, verify potential payment options, create offer, save memos on applications. This application also provides ability to gather audit reports, evaluvate potential payment plan based on minimal customer information. This application allows both User and Inventory management system with integration with external tools for data exchange.",
+      "techSpec": {
+        "Core": "Angular (7 and 10), Typescript, SCSS & Gravity Design Framework, HTML5, CSS3.",
+        "Server": "ASW S3, EC2, Jenkins, TSLint, StyleLint, Prettier.",
+        "codeBase": "Github.",
+        "notes": "*Started with Angular 7 and migrated Angular 10."
+      }
+    },
+    "2": {
+      "Contributions": [
+        ""
+      ]
+    }
+  },
+  "Saibersys": {
+    "1": {
+      "title": "DealerNavigator Platform",
+      "description": "DealerNavigator Platform is a enterprise web application developed using Angular. This application helps Dealerships to connect with their existing CRM application, manage potential leads, Create applications for customers, Create a customer portfolio, view inventory, verify potential payment options, create offer, save memos on applications. This application also provides ability to gather audit reports, evaluvate potential payment plan based on minimal customer information. This application allows both User and Inventory management system with integration with external tools for data exchange.",
+      "techSpec": {
+        "Core": "Angular (7 and 10), Typescript, SCSS & Gravity Design Framework, HTML5, CSS3.",
+        "Server": "ASW S3, EC2, Jenkins, TSLint, StyleLint, Prettier.",
+        "codeBase": "Github.",
+        "notes": "*Started with Angular 7 and migrated Angular 10."
+      }
+    },
+    "2": {
+      "Contributions": [
+        ""
+      ]
+    }
+  },
+  "UH": {
+    "1": {
+      "title": "DealerNavigator Platform",
+      "description": "DealerNavigator Platform is a enterprise web application developed using Angular. This application helps Dealerships to connect with their existing CRM application, manage potential leads, Create applications for customers, Create a customer portfolio, view inventory, verify potential payment options, create offer, save memos on applications. This application also provides ability to gather audit reports, evaluvate potential payment plan based on minimal customer information. This application allows both User and Inventory management system with integration with external tools for data exchange.",
+      "techSpec": {
+        "Core": "Angular (7 and 10), Typescript, SCSS & Gravity Design Framework, HTML5, CSS3.",
+        "Server": "ASW S3, EC2, Jenkins, TSLint, StyleLint, Prettier.",
+        "codeBase": "Github.",
+        "notes": "*Started with Angular 7 and migrated Angular 10."
+      }
+    },
+    "2": {
+      "Contributions": [
+        ""
+      ]
+    }
+  },
+  "SSPL": {
+    "1": {
+      "title": "DealerNavigator Platform",
+      "description": "DealerNavigator Platform is a enterprise web application developed using Angular. This application helps Dealerships to connect with their existing CRM application, manage potential leads, Create applications for customers, Create a customer portfolio, view inventory, verify potential payment options, create offer, save memos on applications. This application also provides ability to gather audit reports, evaluvate potential payment plan based on minimal customer information. This application allows both User and Inventory management system with integration with external tools for data exchange.",
+      "techSpec": {
+        "Core": "Angular (7 and 10), Typescript, SCSS & Gravity Design Framework, HTML5, CSS3.",
+        "Server": "ASW S3, EC2, Jenkins, TSLint, StyleLint, Prettier.",
+        "codeBase": "Github.",
+        "notes": "*Started with Angular 7 and migrated Angular 10."
+      }
+    },
+    "2": {
+      "Contributions": [
+        ""
+      ]
+    }
+  }
+}

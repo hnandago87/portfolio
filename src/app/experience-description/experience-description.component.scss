@@ -1,0 +1,85 @@
+@import '../../styles.scss';
+
+@media screen {
+  :host {
+    width: 100%;
+    border: 1px solid #626262;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: inset -4px -4px 3px 1px #929292;
+    height: fit-content;
+    padding-bottom: 20px;
+
+    .content-container {
+      height: 95%;
+      overflow: scroll;
+      .centered {
+        text-align: center;
+      }
+    }
+    .controls-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+
+      .previous {
+        position: relative;
+
+        &:disabled {
+          cursor: not-allowed;
+        }
+        &::before {
+          content: " ";
+          background: url("../../assets/left-arrow.svg") no-repeat center center;
+          height: 20px;
+          width: 36px;
+          position: absolute;
+          margin-top: -2px;
+          margin-left: -34px;
+        }
+      }
+
+      .next {
+        position: relative;
+
+        &:disabled {
+          cursor: not-allowed;
+        }
+        &::after {
+          content: " ";
+          background: url("../../assets/right-arrow.svg") no-repeat center
+            center;
+          height: 20px;
+          width: 36px;
+          position: absolute;
+          margin-top: -2px;
+        }
+      }
+    }
+
+    //TODO: Move to seperate component
+    .description-title {
+      font-weight: 400;
+      margin: 0 20px;
+      font-size: 20px;
+    }
+    .description {
+      margin: 0 16px;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    .tech-stack {
+      margin: 0 20px;
+      dd {
+        font-weight: 200;
+        margin-left: 30px;
+      }
+    }
+    .tech-stack-notes {
+      font-weight: 200;
+      font-size: 14px;
+      color: #696969;
+      text-align: center;
+    }
+  }
+}

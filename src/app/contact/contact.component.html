@@ -1,0 +1,54 @@
+<app-home-background>
+  <div class="contact-root">
+    <h1 class="title">Contact</h1>
+    <section class="description">
+      For more information and queries, please fill the form below or contact
+      directly through information listed below.
+    </section>
+    <div class="contact-form-container">
+      <form
+        class="contact-form"
+        name="contact-form"
+        [formGroup]="contactForm"
+        (ngSubmit)="onSubmit(contactForm.value)"
+        (submit)="preventDefault($event)"
+      >
+        <ul class="form-list">
+          <li>
+              <label for="name">Name <span class="req">*</span></label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter name"
+                formControlName = "name"
+                required
+              />
+          </li>
+          <li>
+              <label for="email">Email <span class="req">*</span></label>
+              <input
+                type="email"
+                name="emailId"
+                placeholder="Enter email"
+                formControlName = "emailId"
+                required
+              />
+          </li>
+          <li>
+            <label for="comments">Comments</label>
+            <textarea cols="46" rows="10" name="comments" formControlName = "comments"></textarea>
+          </li>
+          <li class="form-controls">
+            <input type="submit" value="Submit" />
+            <button class="cancel" (click)="cancel($event)">Cancel</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+    <!-- <div class="personal-info">
+      <section class="description">(or) Contact me at:</section>
+      <h3>Harikrishna N</h3>
+      <p><a href = "mailto: harikrishna.nandagopal@gmail.com">Send Email</a></p>
+    </div> -->
+  </div>
+</app-home-background>

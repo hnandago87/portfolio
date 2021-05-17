@@ -6,11 +6,8 @@
     </dl>
   </span>
   <div class="content">
-    <div class="home-content">
+    <div [class.full-content]="hideImage" [class.home-content]="!hideImage">
       <ng-content></ng-content>
-    </div>
-    <div class="side-content" *ngIf="!hideImage">
-      <img alt="Hari" src="../../assets/myAvatar.png" />
     </div>
   </div>
   <span id="footer-container">

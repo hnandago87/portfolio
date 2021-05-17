@@ -1,0 +1,20 @@
+<div class="content-container">
+  <ng-container *ngIf="sectionOrg==='CapitalOne'">
+    <h2 class="centered">{{experienceData.title}}</h2>
+    <h3 class="description-title" *ngIf="currentPage === 1">Project Description</h3>
+    <p class="description" *ngIf="currentPage === 1">{{experienceData.description}}</p>
+    <dl class="tech-stack" *ngIf="currentPage === 1">
+      <dt>Core Technologies</dt>
+      <dd>{{experienceData.techSpec.Core}}</dd>
+      <dt>Server & Tools set</dt>
+      <dd>{{experienceData.techSpec.Server}}</dd>
+      <dt>Code Base</dt>
+      <dd>{{experienceData.techSpec.codeBase}}</dd>
+    </dl>
+    <section class="tech-stack-notes" *ngIf="currentPage === 1">{{experienceData.techSpec.notes}}</section>
+  </ng-container>
+</div>
+<div class="controls-container">
+  <button class="text previous" (click)="changePage('PREVIOUS')" [disabled]="currentPage < 2">Previous</button>
+  <button class="text next" (click)="changePage('NEXT')" [disabled]="!hasMorePages && currentPage > 3">Next</button>
+</div>
