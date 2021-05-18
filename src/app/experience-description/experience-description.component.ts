@@ -21,7 +21,6 @@ export class ExperienceDescriptionComponent implements OnChanges, OnInit {
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.sectionOrg.currentValue !== changes.sectionOrg.previousValue) {
       this.experienceData = ExperienceJSON[changes.sectionOrg.currentValue][`${this.currentPage}`];
-      console.log("Number of pages", Object.keys(ExperienceJSON[changes.sectionOrg.currentValue]))
       this.hasMorePages = Boolean(Object.keys(ExperienceJSON[changes.sectionOrg.currentValue]).length > 1);
     }
   }

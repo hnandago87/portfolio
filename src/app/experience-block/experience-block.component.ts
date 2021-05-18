@@ -7,13 +7,13 @@ import { Component, OnInit, Output, EventEmitter } from "@angular/core";
 })
 export class ExperienceBlockComponent implements OnInit {
   @Output() org: EventEmitter<string> = new EventEmitter();
-  selectedExperience = "CapitalOne";
+  selectedExperience = "CyberSoft";
   currentScrollIndex = 0;
 
   constructor() {}
 
   ngOnInit() {
-    this.org.emit("CapitalOne");
+    this.org.emit("CyberSoft");
   }
 
   selectExperience(selectedExperience: string) {

@@ -1,15 +1,15 @@
 <div class="content-container">
-  <ng-container *ngIf="sectionOrg==='CapitalOne'">
+  <ng-container>
     <h2 class="centered">{{experienceData.title}}</h2>
     <h3 class="description-title" *ngIf="currentPage === 1">Project Description</h3>
     <p class="description" *ngIf="currentPage === 1">{{experienceData.description}}</p>
     <dl class="tech-stack" *ngIf="currentPage === 1">
       <dt>Core Technologies</dt>
       <dd>{{experienceData.techSpec.Core}}</dd>
-      <dt>Server & Tools set</dt>
-      <dd>{{experienceData.techSpec.Server}}</dd>
-      <dt>Code Base</dt>
-      <dd>{{experienceData.techSpec.codeBase}}</dd>
+      <dt *ngIf="experienceData.techSpec.Server">Server & Tools set</dt>
+      <dd *ngIf="experienceData.techSpec.Server">{{experienceData.techSpec.Server}}</dd>
+      <dt *ngIf="experienceData.techSpec.codeBase">Code Base</dt>
+      <dd *ngIf="experienceData.techSpec.codeBase">{{experienceData.techSpec.codeBase}}</dd>
     </dl>
     <section class="tech-stack-notes" *ngIf="currentPage === 1">{{experienceData.techSpec.notes}}</section>
   </ng-container>

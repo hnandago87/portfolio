@@ -1,5 +1,6 @@
 {
   "CapitalOne": {
+    "active": false,
     "1": {
       "title": "DealerNavigator Platform",
       "description": "DealerNavigator Platform is an enterprise web application developed using Angular. This application helps Dealerships to connect with their existing CRM application, manage potential leads, Create applications for customers, Create a customer portfolio, view inventory, verify potential payment options, create offer, save memos on applications. This application also provides ability to gather audit reports, evaluvate potential payment plan based on minimal customer information. This application allows both User and Inventory management system with integration with external tools for data exchange.",
@@ -17,6 +18,7 @@
     }
   },
   "CyberSoft": {
+    "active": true,
     "1": {
       "title": "SchoolCafe 2.0",
       "description": "SchoolCafe platform is a web portal and a POS application for facilitating/ managing food and nitrition for school students. It involves various modules such as Item Management, Menu Planning, Accounts Management, Point of Sales, Identity Management. A micro-ui architecture was developed for web portal using ReactJS. The POS application was developed using Angular 6 as a progressivce web app. The web portal can control user access across multiple ISD in a state. Order placement, report generation, granting user access, meal recipies planning, nutrition information generation are developed for the web portal.",
@@ -34,6 +36,7 @@
     }
   },
   "NeimanMarcus": {
+    "active": true,
     "1": {
       "title": "Meiman Marcus Ecommerce web application - Search and Navigation",
       "description": "The search and navigation modules in the application is developed as a stand-alone component used across the web application. Keyword searches, search typeahead suggestion, search history are the frontend features developed using ReactJS which is powered by BloomReach API's for autosuggest feature, ElasticSearch API's are using for fetching products using Java Spring Boot. The search filter components are additional feature to provide criteria based selection of products. The web application was developed to supports responsive web design across all devices. User interactions were improved using analytics by tracking page visits, clicks through session cookies and localStorage objects.",
@@ -51,14 +54,15 @@
     }
   },
   "Samsung": {
+    "active": true,
     "1": {
       "title": "Samsung Gear",
-      "description": "Samsung Gear is an enterprise web application for managing employees health and safety through Samsung Gear communication interfaces.",
+      "description": "Samsung Gear is an enterprise web application for managing employees health and safety through Samsung Gear communication interfaces. The web application was driven to provide a real time data processing of geo-spatial locations both indoor and outdoor on a leaflet map. Construction of indoor layout helped provide zone marker and alerting system for communication. A Gear message system was integrated between Samsung watches and admin portal. Periodic location processing scheduler jobs were run to estimate the current position and history upto an accuracy of 5 meters. The application maintained user data in a multi-tenant MongoDB database using encryption at rest and in transit.",
       "techSpec": {
-        "Core": "ReactJS, MeteorJS, HTML5, CSS3, Material-UI, Python",
+        "Core": "ReactJS, MeteorJS, HTML5, CSS3, Material-UI, Python, Leaflet.JS",
         "Server": "ASW S3, EC2, Jenkins, TSLint, StyleLint, Prettier.",
         "codeBase": "Github.",
-        "notes": "*Started with Angular 7 and migrated Angular 10."
+        "notes": "*Custom map layers were developed for indoor layouts and positions across multiple floors and zones."
       }
     },
     "2": {
@@ -68,14 +72,15 @@
     }
   },
   "ThermoFisher": {
+    "active": true,
     "1": {
-      "title": "DealerNavigator Platform",
-      "description": "DealerNavigator Platform is a enterprise web application developed using Angular. This application helps Dealerships to connect with their existing CRM application, manage potential leads, Create applications for customers, Create a customer portfolio, view inventory, verify potential payment options, create offer, save memos on applications. This application also provides ability to gather audit reports, evaluvate potential payment plan based on minimal customer information. This application allows both User and Inventory management system with integration with external tools for data exchange.",
+      "title": "Fisher Scientific - Business Accounts and Order Management",
+      "description": "Fisher Scientific business accounts application consists of multi-page forms that are country based. Developing the account application included developing custom multi-page form components to support region based form fields. The application also supported multi-language feature using MongoDB to store static contents. The portal consist of UI and Rest APIs which supported file validations, cookie based saving of data for autoloading. The order management application included PDF view/download feature, date/order based multi-facet filters. Documents and data related to back order, pending orders and completed orders were currated using spark jobs and Kafka streams.",
       "techSpec": {
-        "Core": "Angular (7 and 10), Typescript, SCSS & Gravity Design Framework, HTML5, CSS3.",
-        "Server": "ASW S3, EC2, Jenkins, TSLint, StyleLint, Prettier.",
-        "codeBase": "Github.",
-        "notes": "*Started with Angular 7 and migrated Angular 10."
+        "Core": "Angular 4, Typescript, LESS, JQuery, HTML5, CSS3, Java, Spring Boot, Spring Cloud, Eureka, Kafka, Spark.",
+        "Server": "ASW S3, EC2, Jenkins, Cheerio, WebSphere.",
+        "codeBase": "GitLab.",
+        "notes": "Migrated legacy application using Angular framework."
       }
     },
     "2": {
@@ -85,14 +90,15 @@
     }
   },
   "Saibersys": {
+    "active": true,
     "1": {
-      "title": "DealerNavigator Platform",
-      "description": "DealerNavigator Platform is a enterprise web application developed using Angular. This application helps Dealerships to connect with their existing CRM application, manage potential leads, Create applications for customers, Create a customer portfolio, view inventory, verify potential payment options, create offer, save memos on applications. This application also provides ability to gather audit reports, evaluvate potential payment plan based on minimal customer information. This application allows both User and Inventory management system with integration with external tools for data exchange.",
+      "title": "QuickHrms Portal",
+      "description": "QuickHrms portal is a web application to manage employee data, timesheet management and payroll notification system. The application was developed using MEAN stack as a single page application that supported role based authentication. It provided internal employees to send and receive notification, add comments on profiles, collect, maintain and secure documents relating to employment. It also provided an excelsheet processing functionality that automatically processed hours of employment based on dates. The application used MS SQL Server 2012 database and redis to cache, store user login roles and permissions.",
       "techSpec": {
-        "Core": "Angular (7 and 10), Typescript, SCSS & Gravity Design Framework, HTML5, CSS3.",
-        "Server": "ASW S3, EC2, Jenkins, TSLint, StyleLint, Prettier.",
+        "Core": "AngularJS, Javascript, SCSS, Bootstrap, HTML5, CSS3, NodeJS, ExpressJS, Redis.",
+        "Server": "Jenkins",
         "codeBase": "Github.",
-        "notes": "*Started with Angular 7 and migrated Angular 10."
+        "notes": "* Developed internal web portal using ReactJS for front office staff and AngularJS for back office staff."
       }
     },
     "2": {
@@ -102,14 +108,15 @@
     }
   },
   "UH": {
+    "active": true,
     "1": {
-      "title": "DealerNavigator Platform",
-      "description": "DealerNavigator Platform is a enterprise web application developed using Angular. This application helps Dealerships to connect with their existing CRM application, manage potential leads, Create applications for customers, Create a customer portfolio, view inventory, verify potential payment options, create offer, save memos on applications. This application also provides ability to gather audit reports, evaluvate potential payment plan based on minimal customer information. This application allows both User and Inventory management system with integration with external tools for data exchange.",
+      "title": "CET Electrical Labs: Teaching Assistant",
+      "description": "The Bachelor's in University of Houston, College of Technology included various courses that requirement lab activities included circuit theory, microprocessor and microcontroller courses as well as senior projects. The labs required assembling, testing and inventory management of equipments needed for completion of the lab courses. My worked also involved developing and maintaining Senior Labs webiste using Cascade CMS server, creating ABET reports for accreditation process, evaluating assignments, working with senior students to develop final project for graduation, initiating and hosting UnderGraduate Research Symposium.",
       "techSpec": {
-        "Core": "Angular (7 and 10), Typescript, SCSS & Gravity Design Framework, HTML5, CSS3.",
-        "Server": "ASW S3, EC2, Jenkins, TSLint, StyleLint, Prettier.",
-        "codeBase": "Github.",
-        "notes": "*Started with Angular 7 and migrated Angular 10."
+        "Core": "C++, Electrical circuits, MS Excel, HTML5, CSS.",
+        "Server": "Cascade Server",
+        "codeBase": "",
+        "notes": ""
       }
     },
     "2": {
@@ -119,14 +126,15 @@
     }
   },
   "SSPL": {
+    "active": true,
     "1": {
-      "title": "DealerNavigator Platform",
-      "description": "DealerNavigator Platform is a enterprise web application developed using Angular. This application helps Dealerships to connect with their existing CRM application, manage potential leads, Create applications for customers, Create a customer portfolio, view inventory, verify potential payment options, create offer, save memos on applications. This application also provides ability to gather audit reports, evaluvate potential payment plan based on minimal customer information. This application allows both User and Inventory management system with integration with external tools for data exchange.",
+      "title": "Saravana Stocks Trade Reports Application",
+      "description": "An enterprise application that provided a historical data for stock trades for various users. The application provided functionality to import, process and store data from excelsheets into database. Routine print and email notification for report generation was implemented based on user access. Data integrtity was maintained as per BSE and NSE Trading rules.",
       "techSpec": {
-        "Core": "Angular (7 and 10), Typescript, SCSS & Gravity Design Framework, HTML5, CSS3.",
-        "Server": "ASW S3, EC2, Jenkins, TSLint, StyleLint, Prettier.",
+        "Core": "C#, ASP .NET, HTML5, CSS3, JQuery, MS SQL Server 2008.",
+        "Server": "On Premise Server.",
         "codeBase": "Github.",
-        "notes": "*Started with Angular 7 and migrated Angular 10."
+        "notes": ""
       }
     },
     "2": {
