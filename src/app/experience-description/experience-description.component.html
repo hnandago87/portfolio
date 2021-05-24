@@ -12,9 +12,17 @@
       <dd *ngIf="experienceData.techSpec.codeBase">{{experienceData.techSpec.codeBase}}</dd>
     </dl>
     <section class="tech-stack-notes" *ngIf="currentPage === 1">{{experienceData.techSpec.notes}}</section>
+    <div class="contributions" *ngIf="currentPage === 2 && experienceData.Contributions.length > 1">
+      <h3>Personal Contribution</h3>
+      <ul>
+        <li *ngFor="let contribution of experienceData.Contributions">
+          {{contribution}}
+        </li>
+      </ul>
+    </div>
   </ng-container>
 </div>
-<div class="controls-container">
+<div class="controls-container hide">
   <button class="text previous" (click)="changePage('PREVIOUS')" [disabled]="currentPage < 2">Previous</button>
   <button class="text next" (click)="changePage('NEXT')" [disabled]="!hasMorePages && currentPage > 3">Next</button>
 </div>

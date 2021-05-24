@@ -22,6 +22,10 @@
       justify-content: space-around;
       margin-top: 20px;
 
+      &.hide {
+        display: none;
+      }
+
       .previous {
         position: relative;
 
@@ -80,6 +84,16 @@
       font-size: 14px;
       color: #696969;
       text-align: center;
+    }
+
+    .contributions {
+      h3 {
+        padding: 0 30px 10px;
+      }
+
+      ul {
+        padding: 0 46px 20px;
+      }
     }
   }
 }

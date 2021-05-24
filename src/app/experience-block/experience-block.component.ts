@@ -21,29 +21,8 @@ export class ExperienceBlockComponent implements OnInit {
     this.selectedExperience = selectedExperience;
   }
 
-  arrowClick(direction: "forward" | "reverse") {
-    const numberOfElements = document.getElementsByClassName(
-      "experience-block"
-    );
-    if (direction === "forward") {
-      if (numberOfElements.length - this.currentScrollIndex > 0) {
-        if (numberOfElements.length - this.currentScrollIndex > 2) {
-          numberOfElements[this.currentScrollIndex + 3].scrollIntoView({
-            behavior: "smooth",
-          });
-          this.currentScrollIndex += 3;
-        } else {
-          numberOfElements[numberOfElements.length - 1].scrollIntoView({
-            behavior: "smooth",
-          });
-          this.currentScrollIndex = numberOfElements.length;
-        }
-      }
-    } else {
-      numberOfElements[
-        0
-      ].scrollIntoView({ behavior: "smooth" });
-      this.currentScrollIndex = 0;
-    }
+  experienceChange(event) {
+    this.org.emit(event.target.value);
+    this.selectedExperience = event.target.value;
   }
 }

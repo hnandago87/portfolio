@@ -30,8 +30,15 @@
       }
     },
     "2": {
+      "title": "SchoolCafe 2.0",
       "Contributions": [
-        ""
+        "Architecting Micro-UI solution.",
+        "Developed reusuable ReactJS components consumable across react applications.",
+        "Used SASS, CSS standards, accessibility/ ARIA standards to develop application based multi-theming for UI components.",
+        "Developed Docker scripts for deployment process.",
+        "Integrate Keycloak apis for user authentication and authorization.",
+        "Created a POS application using Angular 6, Ionic, CouchBase server.",
+        "Create coding standards and documentation using Confluence"
       ]
     }
   },

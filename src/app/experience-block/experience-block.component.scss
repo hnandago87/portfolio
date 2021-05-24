@@ -7,161 +7,141 @@
       width: 90px;
       margin: 0 20px 0 0;
     }
-    .experience-container {
-      // height: 70vh;
-      overflow: visible;
-      .experience-block {
-        border-radius: 10px;
-        display: flex;
-        width: 350px;
-        height: 50px;
-        align-items: center;
-        margin: 20px;
-        padding: 0 20px;
-        background-color: white;
-        -webkit-box-shadow: 0px 0px 9px -1px rgba(128, 128, 128, 1);
-        -moz-box-shadow: 0px 0px 9px -1px rgba(128, 128, 128, 1);
-        box-shadow: 0px 0px 9px -1px rgba(128, 128, 128, 1);
-        cursor: pointer;
+    #experience-orgs-list-block {
+      .experience-container {
+        // height: 70vh;
+        overflow: visible;
+        .experience-block {
+          border-radius: 10px;
+          display: flex;
+          width: 350px;
+          height: 50px;
+          align-items: center;
+          margin: 20px;
+          padding: 0 20px;
+          background-color: white;
+          -webkit-box-shadow: 0px 0px 9px -1px rgba(128, 128, 128, 1);
+          -moz-box-shadow: 0px 0px 9px -1px rgba(128, 128, 128, 1);
+          box-shadow: 0px 0px 9px -1px rgba(128, 128, 128, 1);
+          cursor: pointer;
 
-        &.hidden {
-          display: none;
-        }
+          &.hidden {
+            display: none;
+          }
 
-        &.active {
-          border: #858585;
-          box-shadow: 5px 3px 1px 2px #1a5d8b;
-        }
+          &.active {
+            border: #858585;
+            box-shadow: 5px 3px 1px 2px #1a5d8b;
+          }
 
-        &:hover {
-          background-color: #f8f8f8;
-        }
+          &:hover {
+            background-color: #f8f8f8;
+          }
 
-        &.tf {
-          &:before {
-            @extend .logo;
-            content: " ";
-            background: url("../../assets/tf.png") no-repeat;
+          &.tf {
+            &:before {
+              @extend .logo;
+              content: " ";
+              background: url("../../assets/tf.png") no-repeat;
 
-            background-position: center;
-            background-size: 100% auto;
+              background-position: center;
+              background-size: 100% auto;
+            }
           }
-        }
-        &.samsung {
-          &:before {
-            @extend .logo;
-            content: " ";
-            background: url("../../assets/samsung.png") no-repeat;
+          &.samsung {
+            &:before {
+              @extend .logo;
+              content: " ";
+              background: url("../../assets/samsung.png") no-repeat;
 
-            background-position: center;
-            background-size: 100% auto;
+              background-position: center;
+              background-size: 100% auto;
+            }
           }
-        }
-        &.nm {
-          &:before {
-            @extend .logo;
-            content: " ";
-            background: url("../../assets/nm.png") no-repeat;
-            background-position: center;
-            background-size: 100% auto;
-            margin: 0 10px 0 0;
+          &.nm {
+            &:before {
+              @extend .logo;
+              content: " ";
+              background: url("../../assets/nm.png") no-repeat;
+              background-position: center;
+              background-size: 100% auto;
+              margin: 0 10px 0 0;
+            }
           }
-        }
-        &.cs {
-          &:before {
-            @extend .logo;
-            content: " ";
-            background: url("../../assets/cs.png") no-repeat;
-            background-position: center;
-            background-size: 100% auto;
-            margin: 0 10px 0 0;
+          &.cs {
+            &:before {
+              @extend .logo;
+              content: " ";
+              background: url("../../assets/cs.png") no-repeat;
+              background-position: center;
+              background-size: 100% auto;
+              margin: 0 10px 0 0;
+            }
           }
-        }
-        &.co {
-          &:before {
-            @extend .logo;
-            content: " ";
-            background: url("../../assets/cp.svg") no-repeat;
-            background-position: center;
-            background-size: 100% auto;
-            margin: 0 10px 0 0;
+          &.co {
+            &:before {
+              @extend .logo;
+              content: " ";
+              background: url("../../assets/cp.svg") no-repeat;
+              background-position: center;
+              background-size: 100% auto;
+              margin: 0 10px 0 0;
+            }
           }
-        }
-        &.sb {
-          &:before {
-            @extend .logo;
-            content: " ";
-            background: url("../../assets/sb.png") no-repeat;
-            background-position: center;
-            background-size: 100% auto;
-            margin: 0 10px 0 0;
+          &.sb {
+            &:before {
+              @extend .logo;
+              content: " ";
+              background: url("../../assets/sb.png") no-repeat;
+              background-position: center;
+              background-size: 100% auto;
+              margin: 0 10px 0 0;
+            }
           }
-        }
-        &.uh {
-          &:before {
-            @extend .logo;
-            content: " ";
-            background: url("https://uh.edu/marcom/_images/brand/logo-uh-primary-black.svg")
-              no-repeat;
-            background-position: center;
-            background-size: 100% auto;
-            margin: 0 10px 0 0;
+          &.uh {
+            &:before {
+              @extend .logo;
+              content: " ";
+              background: url("https://uh.edu/marcom/_images/brand/logo-uh-primary-black.svg")
+                no-repeat;
+              background-position: center;
+              background-size: 100% auto;
+              margin: 0 10px 0 0;
+            }
           }
-        }
-        &.sspl {
-          &:before {
-            @extend .logo;
-            content: " ";
-            background: url("../../assets/sspl.png") no-repeat;
-            background-position: center;
-            background-size: 100% auto;
-            margin: 0 10px 0 0;
+          &.sspl {
+            &:before {
+              @extend .logo;
+              content: " ";
+              background: url("../../assets/sspl.png") no-repeat;
+              background-position: center;
+              background-size: 100% auto;
+              margin: 0 10px 0 0;
+            }
           }
         }
       }
+    }
+    #experience-orgs-selection-block {
+      display: none;
     }
   }
 }
 
 @media screen and (max-width: $screen-lg - 1) {
   :host {
-    display: flex;
-    flex-direction: row;
-    .experience-container {
-      display: flex;
-      overflow: hidden;
-      margin: 0 30px;
-      .experience-block {
-        font-size: 10px;
-      }
+    #experience-orgs-list-block {
+      display: none;
     }
-
-    .arrow {
-      position: relative;
-
-      &.left-arrow {
-        &:before {
-          content: " ";
-          border-right: 5px solid #777070;
-          border-bottom: 5px solid #777070;
-          height: 30px;
-          width: 30px;
-          transform: rotate(135deg);
-          position: absolute;
-          margin: 28px 0px;
-        }
-      }
-      &.right-arrow {
-        &:before {
-          content: " ";
-          border-right: 5px solid #777070;
-          border-bottom: 5px solid #777070;
-          height: 30px;
-          width: 30px;
-          transform: rotate(-45deg);
-          position: absolute;
-          margin: 28px 0px;
-        }
+    #experience-orgs-selection-block {
+      display: block;
+      select {
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #c9c9c9;
+        padding: 0 8px;
+        font-size: 16px;
       }
     }
   }

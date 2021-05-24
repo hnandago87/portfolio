@@ -1,12 +1,23 @@
-<span class="arrow left-arrow" (click)="arrowClick('reverse')" role="button"></span>
-<div class="experience-container">
-  <div class="experience-block co hidden" [class.active]="selectedExperience === 'CapitalOne'" (click)="selectExperience('CapitalOne')">CapitalOne, Plano, TX</div>
-  <div class="experience-block cs" [class.active]="selectedExperience === 'CyberSoft'" (click)="selectExperience('CyberSoft')">Cybersoft, Houston, TX</div>
-  <div class="experience-block nm" [class.active]="selectedExperience === 'NeimanMarcus'" (click)="selectExperience('NeimanMarcus')">Neiman Marcus, Irving, TX</div>
-  <div class="experience-block samsung" [class.active]="selectedExperience === 'Samsung'" (click)="selectExperience('Samsung')">Samsung Electronics America, Plano, TX</div>
-  <div class="experience-block tf" [class.active]="selectedExperience === 'Fisher'" (click)="selectExperience('Fisher')">Thermo Fisher Scientific - US, Moon, PA</div>
-  <div class="experience-block sb" [class.active]="selectedExperience === 'Saibersys'" (click)="selectExperience('Saibersys')">Saibersys Inc, Carrollton, TX</div>
-  <div class="experience-block uh" [class.active]="selectedExperience === 'UH'" (click)="selectExperience('UH')">University of Houston, Houston, TX</div>
-  <div class="experience-block sspl" [class.active]="selectedExperience === 'SSPL'" (click)="selectExperience('SSPL')">Saravana Stocks Pvt Ltd, Chennai, India</div>
+<div id="experience-orgs-list-block">
+  <div id="orgs-list" class="experience-container">
+    <div class="experience-block co hidden" [class.active]="selectedExperience === 'CapitalOne'" (click)="selectExperience('CapitalOne')">CapitalOne, Plano, TX</div>
+    <div class="experience-block cs" [class.active]="selectedExperience === 'CyberSoft'" (click)="selectExperience('CyberSoft')">Cybersoft, Houston, TX</div>
+    <div class="experience-block nm" [class.active]="selectedExperience === 'NeimanMarcus'" (click)="selectExperience('NeimanMarcus')">Neiman Marcus, Irving, TX</div>
+    <div class="experience-block samsung" [class.active]="selectedExperience === 'Samsung'" (click)="selectExperience('Samsung')">Samsung Electronics America, Plano, TX</div>
+    <div class="experience-block tf" [class.active]="selectedExperience === 'Fisher'" (click)="selectExperience('Fisher')">Thermo Fisher Scientific - US, Moon, PA</div>
+    <div class="experience-block sb" [class.active]="selectedExperience === 'Saibersys'" (click)="selectExperience('Saibersys')">Saibersys Inc, Carrollton, TX</div>
+    <div class="experience-block uh" [class.active]="selectedExperience === 'UH'" (click)="selectExperience('UH')">University of Houston, Houston, TX</div>
+    <div class="experience-block sspl" [class.active]="selectedExperience === 'SSPL'" (click)="selectExperience('SSPL')">Saravana Stocks Pvt Ltd, Chennai, India</div>
+  </div>
 </div>
-<span class="arrow right-arrow" (click)="arrowClick('forward')" role="button"></span>
+<div id="experience-orgs-selection-block">
+  <select name="org-selection" (change)="experienceChange($event)" value="selectedExperience" >
+    <option class="experience-block cs" value='CyberSoft'>Cybersoft, Houston, TX</option>
+    <option class="experience-block nm" value='NeimanMarcus'>Neiman Marcus, Irving, TX</option>
+    <option class="experience-block samsung" value='Samsung'>Samsung Electronics America, Plano, TX</option>
+    <option class="experience-block tf" value='Fisher'>Thermo Fisher Scientific - US, Moon, PA</option>
+    <option class="experience-block sb" value='Saibersys'>Saibersys Inc, Carrollton, TX</option>
+    <option class="experience-block uh" value='UH'>University of Houston, Houston, TX</option>
+    <option class="experience-block sspl" value='SSPL'>Saravana Stocks Pvt Ltd, Chennai, India</option>
+  </select>
+</div>

@@ -20,6 +20,7 @@ export class ExperienceDescriptionComponent implements OnChanges, OnInit {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.sectionOrg.currentValue !== changes.sectionOrg.previousValue) {
+      this.currentPage = 1;
       this.experienceData = ExperienceJSON[changes.sectionOrg.currentValue][`${this.currentPage}`];
       this.hasMorePages = Boolean(Object.keys(ExperienceJSON[changes.sectionOrg.currentValue]).length > 1);
     }
