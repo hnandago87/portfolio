@@ -5,3 +5,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 ng build --prod=true --outputPath=docs --baseHref=/portfolio/
+
+### Branches
+dev-1 - development
