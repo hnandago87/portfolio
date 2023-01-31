@@ -23,7 +23,7 @@ export class ContactComponent implements OnInit {
     });
   }
 
-  onSubmit(data) { }
+  onSubmit(data) {}
 
   preventDefault(event: Event): void {
     event.preventDefault();
