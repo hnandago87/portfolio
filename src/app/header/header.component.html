@@ -1,23 +1,23 @@
 <div class="header">
   <span role="banner" aria-label="Portfolio of Hari" [routerLink]="['/home']" class="logo"></span>
   <hr class="logo-seperator" />
-  <div role="navigation" aria-label="Customer service">
-    <ul role="list" aria-label="Site Navigation" class="nav">
-      <li>
+  <div role="navigation" aria-label="Site Navigation">
+    <div role="list" aria-label="Site Navigation" class="nav">
+        <div class="nav-element-container">
         <a routerLink="/home" class="home" aria-label="Home" appTooltip>
           <app-tooltip>Home</app-tooltip>
         </a>
-      </li>
-      <li>
+      </div>
+      <div class="nav-element-container">
         <a routerLink="/about" class="about" aria-label="About Me" appTooltip>
           <app-tooltip>About</app-tooltip>
         </a>
-      </li>
-      <li style="display: none;">
+      </div>
+      <div class="nav-element-container">
         <a routerLink="/contact" class="contact" aria-label="Contact Me" appTooltip>
           <app-tooltip>Contact Me</app-tooltip>
         </a>
-      </li>
-    </ul>
+      </div>
+      </div>
   </div>
 </div>

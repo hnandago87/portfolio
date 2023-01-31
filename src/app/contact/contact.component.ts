@@ -23,9 +23,7 @@ export class ContactComponent implements OnInit {
     });
   }
 
-  onSubmit(data) {
-    console.log("submitted", data, this.contactForm);
-  }
+  onSubmit(data) { }
 
   preventDefault(event: Event): void {
     event.preventDefault();

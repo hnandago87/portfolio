@@ -17,7 +17,6 @@ import { ExpertiseAccordianComponent } from './expertise-accordian/expertise-acc
 import { ExperienceBlockComponent } from './experience-block/experience-block.component';
 import { ExperienceDescriptionComponent } from './experience-description/experience-description.component';
 import { ContactComponent } from './contact/contact.component';
-
 @NgModule({
   declarations: [
     AppComponent,

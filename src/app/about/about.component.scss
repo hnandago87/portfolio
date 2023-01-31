@@ -30,6 +30,16 @@
   :host {
     .container {
       padding: 20px 60px;
+
+      @media screen and (max-width:420px) {
+        padding: 20px 30px;
+      }
     }
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .page-title {
+    font-size: 16px !important;
   }
 }

@@ -1,6 +1,19 @@
 {
+  "CalAmp" : {
+    "active": true,
+    "1" : {
+      "title": "iOn Suite & iOn Admin",
+      "description": "CalAmp flagship web application for telemetric tracking and administration of fleet assets and supply chain tracking. Applications invlove real time tracking of vehicles, containers and cargo on an ESRI Map. Creating application with React 18, NextJS, TypeScript using internationalization to support multi-language. Creating dynamic search and filtering of large dataset using Postgresql queries using Java Spring Boot microservices. Creating travel history based on route/date selection and utilizing Ag-Grid for report generation. Ability of the application to perform operations using role based permissions for users to have CRUD operation on Assets/Drivers associated with CalAmp hardware. Connect to LMUs for dynamic configuration upddates and trigger remote actions",
+      "techSpec" : {
+        "Core" : "ReactJS, NextJS, Redux, react-query, HTML5, SCSS, TypeScript, Fuse.JS, Java, Spring Boot",
+        "Server": "ESRI server, AWS",
+        "codeBase": "BitBucket",
+        "notes" : "Application involved migrating from redux state management to react-query and eventually migrate to graphQL"
+      }
+    }
+  },
   "CapitalOne": {
-    "active": false,
+    "active": true,
     "1": {
       "title": "DealerNavigator Platform",
       "description": "DealerNavigator Platform is an enterprise web application developed using Angular. This application helps Dealerships to connect with their existing CRM application, manage potential leads, Create applications for customers, Create a customer portfolio, view inventory, verify potential payment options, create offer, save memos on applications. This application also provides ability to gather audit reports, evaluvate potential payment plan based on minimal customer information. This application allows both User and Inventory management system with integration with external tools for data exchange.",
@@ -78,7 +91,7 @@
       ]
     }
   },
-  "ThermoFisher": {
+  "Fisher": {
     "active": true,
     "1": {
       "title": "Fisher Scientific - Business Accounts and Order Management",
@@ -115,7 +128,7 @@
     }
   },
   "UH": {
-    "active": true,
+    "active": false,
     "1": {
       "title": "CET Electrical Labs: Teaching Assistant",
       "description": "The Bachelor's in University of Houston, College of Technology included various courses that requirement lab activities included circuit theory, microprocessor and microcontroller courses as well as senior projects. The labs required assembling, testing and inventory management of equipments needed for completion of the lab courses. My worked also involved developing and maintaining Senior Labs webiste using Cascade CMS server, creating ABET reports for accreditation process, evaluating assignments, working with senior students to develop final project for graduation, initiating and hosting UnderGraduate Research Symposium.",

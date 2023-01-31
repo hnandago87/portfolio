@@ -8,7 +8,7 @@ import ExperienceJSON from '../../assets/experience-description.json';
 })
 export class ExperienceDescriptionComponent implements OnChanges, OnInit {
 
-  @Input() sectionOrg: 'CapitalOne' | 'Samsung' | 'CyberSoft' | 'NeimanMarcus' | 'Fisher' | 'Saibersys' | 'UH' | 'SSPL';
+  @Input() sectionOrg: 'CalAmp' | 'CapitalOne' | 'Samsung' | 'CyberSoft' | 'NeimanMarcus' | 'Fisher' | 'Saibersys' | 'UH' | 'SSPL';
   experienceData: any;
   currentPage = 1;
   hasMorePages = false;

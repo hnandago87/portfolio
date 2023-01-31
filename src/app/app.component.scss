@@ -2,19 +2,23 @@
 
 @media screen {
   .main-content {
-    width: 96vw;
+    width: 95vw;
     margin-left: 60px;
     overflow: auto;
+  }
+  .page-title {
+    font-size: 2rem;
   }
 }
 
 @media screen and (max-width: $screen-sm) {
   .main-content {
-    width: 86.5vw;
+    width: 100%;
+    margin-left: 0px;
   }
 }
 
-@media screen and (max-width: $screen-md) {
+@media screen and (min-width: $screen-sm + 1) and (max-width: $screen-md) {
   .main-content {
     width: 92.5vw;
   }

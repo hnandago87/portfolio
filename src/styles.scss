@@ -14,9 +14,13 @@ $screen-sm: 460px;
   color: #162847;
 }
 
+.hide {
+  display: none !important;
+}
+
 body {
   background-color: #e4e4e4;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 h1 {

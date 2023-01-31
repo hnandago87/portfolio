@@ -1,11 +1,19 @@
 <div class="content-container">
   <ng-container>
-    <h2 class="centered">{{experienceData.title}}</h2>
+    <h2 class="project-name centered">{{experienceData.title}}</h2>
     <h3 class="description-title" *ngIf="currentPage === 1">Project Description</h3>
-    <p class="description" *ngIf="currentPage === 1">{{experienceData.description}}</p>
+    <p class="description" *ngIf="currentPage === 1">
+      <ng-container *ngFor="let item of experienceData.description.split('. '); let i = index">
+        <span>{{i+1}}. {{item}}.</span><br />
+      </ng-container>
+    </p>
     <dl class="tech-stack" *ngIf="currentPage === 1">
       <dt>Core Technologies</dt>
-      <dd>{{experienceData.techSpec.Core}}</dd>
+      <dd>
+        <ng-container *ngFor="let item of experienceData.techSpec.Core.split(', '); let i = index">
+          <span>{{i+1}}. {{item}}.</span><br />
+        </ng-container>
+      </dd>
       <dt *ngIf="experienceData.techSpec.Server">Server & Tools set</dt>
       <dd *ngIf="experienceData.techSpec.Server">{{experienceData.techSpec.Server}}</dd>
       <dt *ngIf="experienceData.techSpec.codeBase">Code Base</dt>

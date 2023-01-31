@@ -6,6 +6,9 @@
     .contact-root {
 
       padding: 25px 50px 0px 100px;
+      @media screen and (max-width: 420px) {
+        padding: 25px 50px 0px 30px;
+      }
 
       .title {
         border-bottom: 1px solid #b2b2b2;
@@ -14,10 +17,28 @@
 
       .description {
         color: #626162;
+
+        @media screen and (max-width: 420px) {
+          font-size: 10pt;
+        }
+      }
+
+      .contact-content-section {
+        display: flex;
+        width: 100px;
+        height: 40px;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        .contact-text {
+          font-size: 24px;
+        }
       }
 
       .contact-form-container {
-
+        @media screen and (max-width: 420px) {
+          width: 300px;
+        }
         .contact-form {
 
           .form-list {

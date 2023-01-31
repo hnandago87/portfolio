@@ -12,6 +12,11 @@
     height: 97vh;
     width: 90%;
 
+    @media screen and (max-width: $screen-sm) {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
     #header-container {
       #header {
         dt {
